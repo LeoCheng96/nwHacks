@@ -39,10 +39,26 @@ h6 {
     background-size: cover;
 }
 
+.intro-header2 {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/vancouver.jpg) no-repeat center center;
+    background-size: cover;
+}
+
 .intro-message {
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
+}
+
+.second-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+
 }
 
 .intro-message > h1 {
@@ -91,6 +107,75 @@ h6 {
     font-weight: 400;
     letter-spacing: 2px;
 }
+
+#time {
+    display:none;
+}
+
+#defaultTime {
+    display:block;
+}
+
+#timeButton:hover #time {
+    display:block;
+}
+
+#timeButton:hover #defaultTime {
+    display:none;
+}
+
+#loc {
+    display:none;
+}
+
+#defaultLoc {
+    display:block;
+}
+
+#locButton:hover #loc {
+    display:block;
+}
+
+#locButton:hover #defaultLoc {
+    display:none;
+}
+
+#cat {
+    display:none;
+}
+
+#defaultCat {
+    display:block;
+}
+
+#catButton:hover #cat {
+    display:block;
+}
+
+#catButton:hover #defaultCat {
+    display:none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height:250px;
+    overflow:auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
 
 .content-section-a {
     padding: 50px 0;
